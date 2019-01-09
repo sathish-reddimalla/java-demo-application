@@ -1,0 +1,22 @@
+{
+"containerDefinitions":[
+    {
+      "volumesFrom": [],
+      "memory": 500,
+      "portMappings": [
+        {
+          "hostPort": 0,
+          "containerPort": 8080,
+          "protocol": "tcp"
+        }
+      ],
+      "essential": true,
+      "mountPoints": [],
+      "name": "sample-demo-ctr-web",
+      "environment": [],
+      "image": "105079806215.dkr.ecr.us-east-1.amazonaws.com/sample-demo-ecr-web:v_%BUILD_NUMBER%",
+      "cpu": 0,
+      "memoryReservation": 300     
+    }
+  ]
+}
